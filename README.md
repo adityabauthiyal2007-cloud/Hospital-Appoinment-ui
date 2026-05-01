@@ -1,1 +1,0 @@
-This project is a Hospital Appointment Booking User Interface built using React (Vite). It allows users to browse doctors, select available time slots, book appointments, and manage them through a dashboard.https://github.com/adityabauthiyal2007-cloud/Hospital-Appoinment-ui/tree/main

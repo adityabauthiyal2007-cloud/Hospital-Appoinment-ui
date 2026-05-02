@@ -1,0 +1,52 @@
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: #0f172a; /* Cool dark blue from your original UI */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.sidebar a {
+  color: #cbd5e1; /* Light grey text for readability[cite: 3] */
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+/* Restores the cool hover effect[cite: 3] */
+.sidebar a:hover {
+  background: #1e293b;
+  color: #3b82f6; /* Accent blue color */
+}
+
+/* MOBILE RESPONSIVENESS[cite: 3] */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%); /* Slides sidebar out of view[cite: 3] */
+    visibility: hidden;
+  }
+  
+  /* Use this class if you add a 'Hamburger' menu toggle later */
+  .sidebar.active {
+    transform: translateX(0);
+    visibility: visible;
+    box-shadow: 10px 0 30px rgba(0,0,0,0.5);
+  }
+}
+

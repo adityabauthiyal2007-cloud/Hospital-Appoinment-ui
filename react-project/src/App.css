@@ -1,0 +1,25 @@
+.layout {
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  margin-left: 220px; /* PC Sidebar width */
+  margin-top: 60px;   /* Space for Navbar */
+  transition: margin-left 0.3s ease;
+}
+
+/* MOBILE RESPONSIVENESS[cite: 5] */
+@media screen and (max-width: 768px) {
+  .layout {
+    display: block !important;
+  }
+  
+  .main {
+    margin-left: 0 !important; /* Forces content to the left edge[cite: 5] */
+    width: 100% !important;
+    padding: 15px !important;
+  }
+}
+
